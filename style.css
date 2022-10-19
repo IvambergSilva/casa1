@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat&display=swap');
+
+:root {
+    --fonteCursiva: 'Ephesis', cursive;
+    --Montserrat: 'Montserrat', sans-serif;
+    --cor: #B76E79;
+    --cor2: #F4EFD7;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 20px 0;
+    display: none;
+}
+
+#convidado {
+    font: 400 25px var(--fonteCursiva);
+    margin: 40px 0;
+    text-align: center;
+}
+
+section aside {
+    height: 300px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--cor);
+    border-radius: 20px;
+    box-shadow: 1px 1px 15px #00000080;
+}
+
+.flex {
+    display: none;
+}
+
+.divInputCodigo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font: 400 19px var(--Montserrat);
+}
+
+#codigo {
+    width: 200px;
+    height: 40px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 0 20px;
+    font: 400 19px var(--Montserrat);
+    box-shadow: 0px 1px 14px #00000080;
+}
+
+#botaoCodigo {
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    background: gold;
+    font-size: 20px;
+    font: 400 18px var(--Montserrat);
+    box-shadow: 0px 1px 14px #00000080;
+}
+
+#botaoCodigo:hover {
+    transform: scale(1.05);
+    background: goldenrod;
+    transition: 0.3s;
+    font: 400 19px var(--Montserrat);
+}
+
+
+div.container {
+    width: 900px;
+    background-color: #B76E7990;
+    height: 650px;
+    margin: auto;
+}
+
+body {
+    background-color: #B76E7990;
+}
+
+section aside div {
+    width: 180px;
+    height: 280px;
+    background: #FFF;
+    border-radius: 20px;
+    font: 200 15px var(--fonteCursiva);
+}
+
+section aside div div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+section aside div h2 {
+    height: 30px;
+    text-align: center;
+}
+
+section aside div img {
+    border-radius: 20px;
+    width: 180px;
+}
+
+h1 {
+    text-align: center;
+    font: 400 40px var(--fonteCursiva);
+    margin: 40px 0;
+}
