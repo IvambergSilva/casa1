@@ -94,12 +94,30 @@ label {
 div.container {
     width: 900px;
     background-color: #B76E7990;
-    height: 650px;
+    height: 100vh;
     margin: auto;
 }
 
 body {
     background-color: #B76E7990;
+}
+
+section aside {
+    animation: esmaecer 1s;
+}
+
+section aside:hover{
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+@keyframes esmaecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 section aside div {
@@ -108,6 +126,33 @@ section aside div {
     background: #FFF;
     border-radius: 20px;
     font: 200 15px var(--fonteCursiva);
+}
+
+section aside:nth-child(1) {
+    animation: escala 0.5s;
+}
+
+section aside:nth-child(2) {
+    animation: escala 0.5s;
+    animation-delay: 0.1s;
+}
+
+section aside:nth-child(3) {
+    animation: escala 0.5s;
+    animation-delay: 0.2s;
+}
+
+
+@keyframes escala {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.07);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 section aside div div {
@@ -132,3 +177,4 @@ h1 {
     font: 400 40px var(--fonteCursiva);
     margin: 40px 0;
 }
+
